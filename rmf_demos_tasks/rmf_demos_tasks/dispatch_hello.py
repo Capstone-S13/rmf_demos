@@ -44,6 +44,8 @@ class TaskRequester(Node):
                             type=str, help='Robot name')
         parser.add_argument('-s', '--start', required=True,
                             type=str, help='Start waypoint')
+        parser.add_argument('-e', '--end', required=True,
+                            type=str, help='End waypoint')
         parser.add_argument('-st', '--start_time',
                             help='Start time from now in secs, default: 0',
                             type=int, default=0)
@@ -93,6 +95,7 @@ class TaskRequester(Node):
         activities = []
         activities.append({"category": "go_to_place",  "description": self.args.start})
         activities.append({"category": "perform_action",  "description": {"unix_millis_action_duration_estimate": 60000, "category": "hello", "description": {}}})
+        activities.append({"category": "go_to_place",  "description": self.args.end})
         description["phases"].append({"activity":{"category": "sequence", "description":{"activities":activities}}})
         request["description"] = description
         payload["request"] = request
