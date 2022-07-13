@@ -1,0 +1,25 @@
+{
+  "world_name" : "Level 4",
+  "valid_task": ["Loop"],
+  "task": {
+    "Delivery": {},
+    "Loop": {
+      "places": [
+        "hub",
+        "waiting_point",
+        "robots_r_us",
+        "sg_botic",
+        "element_14",
+        "rs_components"
+      ]
+    },
+    "Clean": {
+    },
+    "Station": {
+    },
+    "Patrol": {
+    },
+    "Charging": {
+    }
+  }
+}

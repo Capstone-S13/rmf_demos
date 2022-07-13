@@ -32,5 +32,6 @@ install(DIRECTORY
   office
   hotel
   clinic
+  level_4_map
   DESTINATION share/${PROJECT_NAME}
 )

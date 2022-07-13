@@ -39,7 +39,7 @@ setup(
           'teleop_action = rmf_demos_tasks.teleop_action:main',
           'dispatch_multi_stop = rmf_demos_tasks.dispatch_multi_stop:main',
           'dispatch_hello = rmf_demos_tasks.dispatch_hello:main',
-          'end_action = rmf_demos_tasks.end_action:main'
+          'end_action = rmf_demos_tasks.end_action:main',
           'teleop_robot = rmf_demos_tasks.teleop_robot:main',
         ],
     },
